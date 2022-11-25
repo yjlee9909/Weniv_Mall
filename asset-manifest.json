@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Weniv_Mall/static/css/main.0741c085.css",
-    "main.js": "/Weniv_Mall/static/js/main.7ccaa25a.js",
+    "main.js": "/Weniv_Mall/static/js/main.5234d1f7.js",
     "static/media/SpoqaHanSans-Light.woff": "/Weniv_Mall/static/media/SpoqaHanSans-Light.2efd9d0cd25cfd2e3e16.woff",
     "static/media/SpoqaHanSans-Thin.woff": "/Weniv_Mall/static/media/SpoqaHanSans-Thin.fa5d85bca1b2b4ad3c56.woff",
     "static/media/SpoqaHanSans-Regular.woff": "/Weniv_Mall/static/media/SpoqaHanSans-Regular.a4038e1b6c14b2b6028c.woff",
@@ -15,10 +15,10 @@
     "static/media/icon-heart.svg": "/Weniv_Mall/static/media/icon-heart.f68a21bc77488dac8c34b7650d1237ab.svg",
     "index.html": "/Weniv_Mall/index.html",
     "main.0741c085.css.map": "/Weniv_Mall/static/css/main.0741c085.css.map",
-    "main.7ccaa25a.js.map": "/Weniv_Mall/static/js/main.7ccaa25a.js.map"
+    "main.5234d1f7.js.map": "/Weniv_Mall/static/js/main.5234d1f7.js.map"
   },
   "entrypoints": [
     "static/css/main.0741c085.css",
-    "static/js/main.7ccaa25a.js"
+    "static/js/main.5234d1f7.js"
   ]
 }
