@@ -6,13 +6,13 @@ export const ProductDetailWrapper = styled.section`
         display: flex;
         margin: 60px auto 42px;
 
-        img {
+        > img {
             width: 400px;
             border: 1px solid #c4c4c4;
             border-radius: 10px;
         }
 
-        ul {
+        > ul {
             width: 440px;
             margin-left: 30px;
 
@@ -29,7 +29,7 @@ export const ProductDetailWrapper = styled.section`
             .product-price {
                 margin-top: 10px;
 
-                strong {
+                > strong {
                     font-weight: 700;
                     font-size: 24px;
                     line-height: 30px;
@@ -100,7 +100,7 @@ export const ProductDetailWrapper = styled.section`
                         right: -14.5px;
                         top: 4px;
                     }
-                    strong {
+                    > strong {
                         font-weight: 700;
                         color: #eb5757;
                     }
@@ -109,7 +109,7 @@ export const ProductDetailWrapper = styled.section`
                     color: #eb5757;
                     margin-left: 29px;
 
-                    strong {
+                    > strong {
                         font-weight: 700;
                         font-size: 36px;
                         line-height: 45px;

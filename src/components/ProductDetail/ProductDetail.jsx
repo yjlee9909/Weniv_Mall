@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
 import { ProductDetailWrapper } from "./styled";
 
+import cartImg from "../../asset/images/icon-shopping-cart.svg";
+import heartImg from "../../asset/images/icon-heart.svg";
+import heartOnImg from "../../asset/images/icon-heart-on.svg";
+
 const ProductDetail = ({ locationData }) => {
-    // console.log(locationData);
     const [productData, setProductData] = useState();
     const [count, setCount] = useState(1);
+    const [isLike, setIsLike] = useState(false);
 
     useEffect(() => {
         if (locationData) {
@@ -13,7 +17,6 @@ const ProductDetail = ({ locationData }) => {
             });
         }
     }, []);
-    // console.log(productData);
 
     const onClickCountHandler = (type) => {
         if (type === "increment") {
@@ -29,7 +32,7 @@ const ProductDetail = ({ locationData }) => {
 
     return (
         <ProductDetailWrapper>
-            <h2 className="hidden">상품정보페이지</h2>
+            <h2 className="hidden">상품 정보 페이지</h2>
             {productData && (
                 <div className="detail-main">
                     <img src={`https://test.api.weniv.co.kr/${productData.thumbnailImg}`} alt="" />
@@ -67,11 +70,25 @@ const ProductDetail = ({ locationData }) => {
                                 <strong>{(productData.price * count).toLocaleString()}</strong>
                             </span>
                         </li>
-                        <li className="product-btn-box"></li>
+                        <li className="product-btn-box">
+                            <button className="buy-btn">바로 구매</button>
+                            <button className="cart-btn">
+                                <img src={cartImg} alt="장바구니" />
+                            </button>
+                            <button
+                                className="like-btn"
+                                onClick={() => {
+                                    setIsLike((prev) => !prev);
+                                }}
+                            >
+                                <img src={isLike ? heartOnImg : heartImg} alt="좋아요" />
+                            </button>
+                        </li>
                     </ul>
                 </div>
             )}
         </ProductDetailWrapper>
     );
 };
+
 export default ProductDetail;
